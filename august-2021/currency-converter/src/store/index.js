@@ -17,7 +17,7 @@ const store = createStore({
   actions: {
     GET_KYRS_VALYT_IPA({ commit }) {
       return axios
-        .get("http://www.cbr-xml-daily.ru/daily_json.js")
+        .get("https://www.cbr-xml-daily.ru/daily_json.js")
         .then((e) => {
           commit("SET_KYRS_VALYT", e.data);
           return e;

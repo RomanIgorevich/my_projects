@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import v1 from "../components/v-1";
 import v2 from "../components/v-2";
 
-const routerHistory = createWebHistory();
+const routerHistory = createWebHistory(process.env.BASE_URL);
 
 const router = createRouter({
   history: routerHistory,
